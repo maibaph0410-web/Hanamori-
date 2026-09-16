@@ -1,0 +1,7 @@
+{
+  "name": "HANAMORI",
+  "description": "An emotional diary presented as a magical 2.5D cozy memory garden with interactive 3D companion pets, memory trees, and future letters.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>HANAMORI — Emotional Diary & Memory Garden</title>
+    <meta name="description" content="An emotional diary presented as a magical 2.5D cozy memory garden with interactive 3D companion pets, memory trees, and future letters." />
+    <meta property="og:title" content="HANAMORI — Emotional Diary & Memory Garden" />
+    <meta property="og:description" content="An emotional diary presented as a magical 2.5D cozy memory garden with interactive 3D companion pets, memory trees, and future letters." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito:wght@400;600;700;800&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #ffdce5;
+        font-family: 'Nunito', 'Zen Maru Gothic', sans-serif;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+      #root {
+        width: 100%;
+        height: 100%;
+        background-color: #ffdce5;
+      }
+      .fallback-error-message {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: #ffdce5;
+        color: #7b3e55;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+        z-index: 99999;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Immediate pre-hydration visual to guarantee zero black screen -->
+      <div style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(135deg, #ffeef4 0%, #ffd6e4 100%); color: #9d486e;">
+        <div style="font-size: 32px; font-weight: 800; letter-spacing: 2px; margin-bottom: 8px;">🌸 HANAMORI</div>
+        <div style="font-size: 15px; opacity: 0.85;">Every feeling leaves a little tree.</div>
+      </div>
+    </div>
+    <noscript>
+      <div class="fallback-error-message" style="display: flex;">
+        <h2>Hanamori could not load correctly. Please refresh the page.</h2>
+        <p>JavaScript is required to explore the memory garden.</p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
+
